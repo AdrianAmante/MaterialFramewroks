@@ -20,8 +20,19 @@ import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
 
+// Material Design Lite
+// import '../../node_modules/material-design-lite/dist/material.min.js'; 
+
+// Bootstrap Material Design
+// import '../../node_modules/jquery/dist/jquery.min.js';
+// import '../../node_modules/popper.js/dist/umd/popper.min.js';
+// import '../../node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.js'; 
+// Need to add <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+// Material Design for web
+import '../../node_modules/material-components-web/dist/material-components-web.js';
+
 import '../styles/styles.scss';
-import '../styles/headings.css';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -76,3 +87,5 @@ interface StoreType {
   ]
 })
 export class AppModule {}
+
+

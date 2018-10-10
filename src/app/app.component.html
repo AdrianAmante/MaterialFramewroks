@@ -1,0 +1,115 @@
+<!-- <nav>
+    <a [routerLink]=" ['./'] "
+      routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      Index
+    </a>
+    <a [routerLink]=" ['./home'] "
+      routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      Home
+    </a>
+    <a [routerLink]=" ['./detail'] "
+      routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      Detail
+    </a>
+    <a [routerLink]=" ['./barrel'] "
+      routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      Barrel
+    </a>
+    <a [routerLink]=" ['./about'] "
+      routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      About
+    </a>
+    <a *ngIf="showDevModule" [routerLink]=" ['./dev-module'] "
+       routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      DevModule
+    </a>
+  </nav> -->
+
+<!-- Colored FAB button with ripple -->
+<!-- <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+    <i class="material-icons">add</i>
+  </button> -->
+
+
+<!-- <main>
+    <router-outlet></router-outlet>
+  </main> -->
+
+<!-- <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+
+  <footer>
+    <span>Angular Starter by <a [href]="twitter">@gdi2290</a></span>
+    <div>
+      <a [href]="url">
+        <img [src]="tipe" width="25%">
+      </a>
+    </div>
+  </footer> -->
+
+<!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+<!-- <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Title</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+          <main>
+    <router-outlet></router-outlet>
+  </main>
+      </div>
+    </main>
+  </div> -->
+
+
+<!-- <div class="mdc-card__actions">
+    <button class="mdc-button mdc-card__action mdc-card__action--button">Action 1</button>
+    <button class="mdc-button mdc-card__action mdc-card__action--button">Action 2</button>
+  </div> -->
+
+<div id="root">
+  <div class="drawer-frame-root">
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title">Mail</h3>
+        <h6 class="mdc-drawer__subtitle">email@material.io</h6>
+      </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list"><a class="mdc-list-item mdc-list-item--activated" href="#" tabindex="0" aria-selected="true"><i
+              class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox</a><a class="mdc-list-item"
+            href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star</a><a
+            class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent
+            Mail</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic"
+              aria-hidden="true">drafts</i>Drafts</a>
+          <hr class="mdc-list-divider">
+          <h6 class="mdc-list-group__subheader">Labels</h6><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic"
+              aria-hidden="true">bookmark</i>Family</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic"
+              aria-hidden="true">bookmark</i>Friends</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic"
+              aria-hidden="true">bookmark</i>Work</a>
+          <hr class="mdc-list-divider"><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic"
+              aria-hidden="true">settings</i>Settings</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic"
+              aria-hidden="true">announcement</i>Help &amp; feedback</a>
+        </nav>
+      </div>
+    </aside>
+    <div class="mdc-drawer-app-content">
+      <header class="mdc-top-app-bar drawer-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"><button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+              style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">menu</button><span
+              class="mdc-top-app-bar__title">Dismissible Drawer</span></section>
+        </div>
+      </header>
+      <div class="drawer-main-content">
+        <div class="mdc-top-app-bar--fixed-adjust"></div>
+        <router-outlet></router-outlet>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam odit temporibus omnis, eius officia dolor illum repudiandae ducimus, sit itaque labore placeat similique. Obcaecati iste alias iure autem impedit.
+      </div>
+    </div>
+  </div>
+</div>

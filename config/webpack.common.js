@@ -9,6 +9,7 @@ const helpers = require('./helpers');
  *
  * problem with copy-webpack-plugin
  */
+const ProvidePlugin = require('webpack/lib/ProvidePlugin'); // added for jquery
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlElementsPlugin = require('./html-elements-plugin');
@@ -161,6 +162,12 @@ module.exports = function(options) {
      * See: https://webpack.js.org/configuration/plugins/
      */
     plugins: [
+      // Way to add jquery dependency
+      new ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        Popper: 'popper.js'
+      }),
       /**
        * Plugin: DefinePlugin
        * Description: Define free variables.
